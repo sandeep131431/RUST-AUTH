@@ -26,7 +26,7 @@ function Login({ onSwitchToSignup, onLoginSuccess }) {
       console.log('📤 Sending login data:', { email: form.email, password: '***' })
 
       // Login endpoint call
-      const response = await axios.post('http://localhost:8000/login', {
+      const response = await axios.post('https://rust-bkd-1.onrender.com/login', {
         email: form.email.trim(),
         password: form.password,
       }, {

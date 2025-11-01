@@ -36,7 +36,7 @@ function Signup({ onSwitchToLogin }) {
     try {
       console.log('📤 Sending signup data:', { ...form, password: '***' })
 
-      const response = await axios.post('http://localhost:8000/user', {
+      const response = await axios.post('https://rust-bkd-1.onrender.com/user', {
         name: form.name.trim(),
         email: form.email.trim(),
         password: form.password,
